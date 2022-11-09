@@ -9,7 +9,7 @@
 #      -The hardest part of this assignment was the asserts. It is a different kind of 
 #           debugging than I am used to so I am slightly thrown off by it.-
 # 5. How long did it take for you to complete the assignment?
-#      -This assignment took me 5 hours to complete.
+#      -This assignment took me 3 hours to complete.
 
 
 import json
@@ -17,9 +17,9 @@ def main():
 
     #prompts to ask it it is a test
     test = input("Is this a test?(y/n) ")
+    
+    # Runs Test Cases
     if test == "y":
-
-        # Runs Test Cases
         program("Lab08.empty.json")
         cont = input("\nPress enter to continue. ")
         program("Lab08.trivial.json")
@@ -29,9 +29,9 @@ def main():
         program("Lab08.states.json")
         cont = input("\nPress enter to continue. ")
         program("Lab08.cities.json")
-    else:
 
-        # Prompt user for file name and word to search.
+    # Prompt user for file name and word to search.
+    else:
         file_name = input(f"What is the name of the file? ")
         assert type(file_name) == str
 
